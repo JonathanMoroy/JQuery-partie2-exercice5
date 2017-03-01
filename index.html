@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-2.2.4.js"></script>
+  <title>Exercice 5</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Nom : </label><input type="text" name="nom" value="" id="nom" />
+    <label for="prenom">Prénom : </label><input type="text" name="prenom" value="" id="prenom" />
+    <button type="button" name="button" >Envoyer</button>
+  </form>
+  <script>
+  // Déclaration de deux variables contenant chacune un des deux input du formulaire
+  var second_name = $('#nom');
+  var first_name = $('#prenom');
+  // Ajout d'un focus sur second_name qui met des bordures vertes
+  second_name.focus(function(){
+    second_name.css('border', '1px solid green')
+  });
+  // Ajout d'un blur sur second_name qui met des bordures rouges
+  second_name.blur(function(){
+    second_name.css('border', '1px solid red')
+  });
+  // Ajout d'un focus sur first_name qui met des bordures vertes
+  first_name.focus(function(){
+    first_name.css('border', '1px solid green')
+  });
+  // Ajout d'un blur sur first_name qui met des bordures rouges
+  first_name.blur(function(){
+    first_name.css('border', '1px solid red')
+  });
+  </script>
+</body>
+</html>
